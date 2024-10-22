@@ -26,4 +26,10 @@ public class UserModel {
     private String password;
     @CreationTimestamp
     private LocalDateTime createdAt;
+
+    public UserModel(String name, String username, String password) {
+        this.name = name;
+        this.username = username;
+        this.password = password;
+    }
 }
