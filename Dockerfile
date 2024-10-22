@@ -5,11 +5,11 @@ RUN apt-get install openjdk-17 -y
 
 COPY . .
 
-FROM openjdk-17-alphine
-
 RUN apt-get install maven -y
 
 RUN mvn clean install
+
+FROM openjdk:17-alpine
 
 EXPOSE 8080
 
